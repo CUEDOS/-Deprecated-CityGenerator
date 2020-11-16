@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using Random = UnityEngine.Random;
-using Samspace;
-namespace Samspace
+namespace SCG
 {
     public class SimpleCityGenerator : MonoBehaviour
     {
