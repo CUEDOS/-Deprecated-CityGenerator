@@ -31,7 +31,7 @@ namespace Samspace
 
         private void Start()
         {
-            if (useSimManager) GetVariables();
+            
         }
 
         private float Randn(float mean, float var, float min = 0.5f, float max = 1.5f)
@@ -111,7 +111,7 @@ namespace Samspace
         {
             if (useSimManager)
             {
-                GetVariables();
+               
                 DestroyAll();
                 SpawnBuildings();
             }
@@ -136,14 +136,6 @@ namespace Samspace
 
         }
 
-        public void GetVariables()
-        {
-            citySize = SimManager.expVars["CitySize"];
-            BCI = SimManager.expVars["BCI"];
-            FAI = SimManager.expVars["FAI"];
-            HVariability = SimManager.expVars["HVariability"];
-            ARVariability = SimManager.expVars["ARVariability"];
-        }
-
+        
     }
 }
