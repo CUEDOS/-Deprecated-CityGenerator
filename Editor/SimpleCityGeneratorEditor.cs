@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.XR.ARFoundation;
-using Samspace;
-namespace Samspace
+using SCG;
+namespace SCG
 {
     [CustomEditor(typeof(SimpleCityGenerator))]
     public class SimpleCityGeneratorEditor : Editor
