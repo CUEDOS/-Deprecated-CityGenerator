@@ -53,16 +53,16 @@ namespace SCG
                 case Type.HighRiseResidential:
                     _bci = 0.6f;
                     _fai = 3;
-                    _hVariability = 4f;
-                    _arVariability = 2f;
+                    _hVariability = 2f;
+                    _arVariability = 0.2f;
                     _meanCellSize = 30f;
                     break;
                 
                 case Type.Commercial:
                     _bci = 0.7f;
-                    _fai = 10f;
+                    _fai = 13f;
                     _hVariability = 1f;
-                    _arVariability =0.4f;
+                    _arVariability =0.2f;
                     _meanCellSize = 30f;
                     break;
                 
