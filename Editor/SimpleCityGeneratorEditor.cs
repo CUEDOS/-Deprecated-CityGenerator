@@ -17,12 +17,10 @@ namespace SCG
 
             }
 
-            if (GUILayout.Button("Remove Spawns"))
+            if (GUILayout.Button("Remove Objects"))
             {
                 spawner.DestroyAll();
             }
-
-
 
         }
     }

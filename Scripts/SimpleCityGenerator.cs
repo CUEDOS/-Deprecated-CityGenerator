@@ -13,7 +13,7 @@ namespace SCG
         public Type type;
         
         public GameObject buildingPrefab;
-        public GameObject distributionPrefab;
+        //public GameObject distributionPrefab;
 
         #endregion
 
@@ -51,17 +51,17 @@ namespace SCG
                     break;
                 
                 case Type.HighRiseResidential:
-                    _bci = 0.6f;
+                    _bci = 0.7f;
                     _fai = 3;
-                    _hVariability = 2f;
+                    _hVariability = 3f;
                     _arVariability = 0.2f;
                     _meanCellSize = 30f;
                     break;
                 
                 case Type.Commercial:
                     _bci = 0.7f;
-                    _fai = 13f;
-                    _hVariability = 1f;
+                    _fai = 11f;
+                    _hVariability = 3f;
                     _arVariability =0.2f;
                     _meanCellSize = 30f;
                     break;
@@ -144,20 +144,20 @@ namespace SCG
 
         }
 
-        public void SpawnDistribution()
-        {
-            _distCentres = new GameObject("DistCentres");
-            float distPos = tileSize * 0.5f + 50f;
-            int[] xs = new int[] { -1, -1, 1, 1 };
-            int[] ys = new int[] { -1, 1, -1, 1 };
-
-            for (int i = 0; i < 4; i++)
-            {
-                Vector3 pos = new Vector3(distPos * xs[i], 0, distPos * ys[i]);
-                _spawner = Instantiate(distributionPrefab, pos, Quaternion.identity, _distCentres.transform);
-            }
-
-        }
+        // public void SpawnDistribution()
+        // {
+        //     _distCentres = new GameObject("DistCentres");
+        //     float distPos = tileSize * 0.5f + 50f;
+        //     int[] xs = new int[] { -1, -1, 1, 1 };
+        //     int[] ys = new int[] { -1, 1, -1, 1 };
+        //
+        //     for (int i = 0; i < 4; i++)
+        //     {
+        //         Vector3 pos = new Vector3(distPos * xs[i], 0, distPos * ys[i]);
+        //         _spawner = Instantiate(distributionPrefab, pos, Quaternion.identity, _distCentres.transform);
+        //     }
+        //
+        // }
 
         public void Spawn()
         {
