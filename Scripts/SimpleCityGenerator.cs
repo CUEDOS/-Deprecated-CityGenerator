@@ -46,7 +46,7 @@ namespace SCG
                     _bci = 0.3f;
                     _fai = 0.3f;
                     _hVariability = 1f;
-                    _arVariability = 0.5f;
+                    _arVariability = 0.3f;
                     _meanCellSize = 20f;
                     break;
                 
